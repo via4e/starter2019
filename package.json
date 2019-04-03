@@ -1,0 +1,12 @@
+{
+  "name": "starter2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/via4e/starter2019.git",
+  "author": "via4e <version-1@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
