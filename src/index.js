@@ -15,7 +15,7 @@ render (
 	<Provider store={store}>
 		<Router>
 			<div>
-			    <TopMenu/>
+				<TopMenu/>
 				<Route exact path="/" component={App} />
 				<Route path="/home" component={Home} />
 				<Route path="/page" component={Page} />
@@ -25,3 +25,4 @@ render (
 	</Provider>,
 	document.getElementById('app')
 )
+

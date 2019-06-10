@@ -7,7 +7,7 @@
     "start": "concurrently \"npm run dev\" \"npm run api\"",
     "api": "node back/server.js",
     "dev": "webpack-dev-server --hot --inline",
-    "build": "webpack"
+    "build": "webpack && cp index_build.html build/index.html"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,6 @@
     "babel-preset-stage-0": "^6.5.0",
     "concurrently": "^3.5.0",
     "css-loader": "^0.28.4",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.18.2",
     "url-loader": "^2.0.0",
@@ -34,7 +32,9 @@
   },
   "dependencies": {
     "history": "^4.6.3",
+    "html-webpack-plugin": "^3.2.0",
     "immutable": "^3.8.1",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.0",
     "react-day-picker": "^6.0.3",

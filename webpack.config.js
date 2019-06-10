@@ -1,5 +1,4 @@
 var path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     devtool: 'source-map',
@@ -11,7 +10,6 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/static/'
     },
-
     devServer: {
         proxy: [{
             path: '/api/',

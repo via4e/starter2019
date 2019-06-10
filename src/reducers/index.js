@@ -1,5 +1,5 @@
 export const initialState = {
-    model: 'Root Page'
+    model: 'Unknown M'
 }
 
 export function rootReducer (state = initialState) {
