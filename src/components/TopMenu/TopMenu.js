@@ -7,10 +7,10 @@ export default class TopMenu extends Component {
     render() {
         return (
             <div className="topmenu">
-                <Link to="/">Root </Link>
-                <Link to="/home">Home </Link>
-                <Link to="/page">Page </Link>
-                <Link to="/secondpage">Second Page </Link>
+                <Link to="/">Tutorial</Link>
+                <Link to="/booking">Booking</Link>
+                <Link to="/client">Client</Link>
+                <Link to="/hotelier">Hotelier</Link>
             </div>
         )
     }

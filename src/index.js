@@ -4,9 +4,9 @@ import { store } from './store/configureStore'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import App from './components/App'
-import Home from './components/Home/Home'
-import Page from './components/Page/Page'
-import SecondPage from './components/SecondPage/SecondPage'
+import Booking from './components/Booking/Booking'
+import Client from './components/Client/Client'
+import Hotelier from './components/Hotelier/Hotelier'
 import TopMenu from "./components/TopMenu/TopMenu";
 
 import './style.scss'
@@ -17,9 +17,9 @@ render (
 			<div>
 				<TopMenu/>
 				<Route exact path="/" component={App} />
-				<Route path="/home" component={Home} />
-				<Route path="/page" component={Page} />
-				<Route path="/secondpage" component={SecondPage} />
+				<Route path="/booking" component={Booking} />
+				<Route path="/client" component={Client} />
+				<Route path="/hotelier" component={Hotelier} />
 			</div>
 		</Router>
 	</Provider>,

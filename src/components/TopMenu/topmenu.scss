@@ -6,9 +6,12 @@ a {
     font-weight: bold;
     color: $blue;
     font-family: Effra;
+    text-decoration: none;
 
 }
 
 .topmenu {
-    margin: 3em;
+    width:100%;
+    border-bottom: 1px solid grey;
+    margin: 0;
 }

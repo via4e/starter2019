@@ -1,12 +1,14 @@
 import React, {Component} from 'react'
 import TopMenu from '../TopMenu/TopMenu'
 
+import './client.scss'
+
 export default class Page extends Component {
     render() {
         return (
-            <div>
-                <div className='page'>
-                    Page
+            <div className='client'>
+                <div className='clientheader'>
+                    Client
                 </div>
             </div>
 
