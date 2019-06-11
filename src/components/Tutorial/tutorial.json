@@ -1,0 +1,9 @@
+var tutortext = {
+  "first": 'lorem lorem 1',
+  "second": 'lorem lorem 2',
+  "third": 'lorem lorem 3',
+  "forth": 'lorem lorem 4',
+  "five": 'lorem lorem 5'
+}
+
+export default tutortext
