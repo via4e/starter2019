@@ -1,15 +1,28 @@
 import React, { Component } from 'react'
 
 import './hotelier.scss'
+import {connect} from 'react-redux'
 
-export default class SecondPage extends Component {
-    render() {
+
+class Hotelier extends Component {
+    render () {
+        console.log('hotelier props', this.props)
+
         return (
             <div className='hotelier'>
                 <div className='hotelierheader'>
-                    SecondPage
+                    {this.props.hotelier}
                 </div>
             </div>
         )
     }
 }
+
+const mapStateToProps = store => {
+    console.log('store', store)
+    return {
+        hotelier: store.init.hotelier,
+    }
+}
+
+export default connect(mapStateToProps)(Hotelier)

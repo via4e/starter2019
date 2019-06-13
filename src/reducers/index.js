@@ -1,10 +1,11 @@
-export const initialState = {
-    model: 'Tutorial',
-    login: false,
- tutorial: 0
+import { combineReducers } from 'redux'
+import { tutorialReducer } from './tutorial'
+import { userReducer } from './user'
+import { initReducer } from './init'
 
-}
 
-export function rootReducer (state = initialState) {
-    return state
-}
+export const rootReducer = combineReducers ({
+        init: initReducer,
+    tutorial: tutorialReducer,
+        user: userReducer,
+})
