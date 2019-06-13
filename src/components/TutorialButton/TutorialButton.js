@@ -5,7 +5,11 @@ import './tutorbutton.scss'
 class TutorialButton extends Component {
     render () {
         return (
-          <div className='tutorialbutton'>Пропустить</div>
+          <div className='tutorialbutton'>
+              <span>
+                  Пропустить
+              </span>
+          </div>
         )
     }
 }
