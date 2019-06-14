@@ -1,6 +1,5 @@
-export function TutorialNext(page) {
+export function TutorialNext() {
     return {
-        type: 'TUTORIAL_NEXT',
-        payload: page,
+        type: 'TUTORIAL_NEXT'
     }
 }

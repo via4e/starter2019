@@ -11,7 +11,6 @@ class App extends Component {
             <div className='app'>
                 <Tutorial page={this.props.page}/>
             </div>
-
         )
     }
 }
@@ -22,6 +21,11 @@ const mapStateToProps = store => {
         page: store.init.tutorial_page,
     }
 };
+
+const mapDispatchToProps = dispatch => ({
+    nextPage: () => dispatch
+})
+
 
 export default connect(
     mapStateToProps,
