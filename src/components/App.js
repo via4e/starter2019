@@ -7,11 +7,9 @@ import './app.scss'
 
 class App extends Component {
     render () {
-        const page=0;
         return (
             <div className='app'>
-                <span className='appheader'>{this.props.model}</span>
-                <Tutorial page={page}/>
+                <Tutorial page={this.props.page}/>
             </div>
 
         )
@@ -21,7 +19,7 @@ class App extends Component {
 const mapStateToProps = store => {
     console.log('store', store)
     return {
-        model: store.model,
+        page: store.init.tutorial_page,
     }
 };
 

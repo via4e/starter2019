@@ -1,10 +1,7 @@
 .tutorialwindow {
-  position: fixed;
+  position: relative;
   width: 940px;
   height: 895px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: #ffffff;
   border-radius: 84px;
 }

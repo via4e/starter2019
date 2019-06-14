@@ -6,9 +6,9 @@ class TutorialButton extends Component {
     render () {
         return (
           <div className='tutorialbutton'>
-              <span>
-                  Пропустить
-              </span>
+              <div className='tutorialbutton_text'>
+                  {this.props.button_text}
+              </div>
           </div>
         )
     }

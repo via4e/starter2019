@@ -1,4 +1,7 @@
 .tutorialbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 515px;
   height: 75px;
@@ -10,8 +13,7 @@
   border-radius: 49.5px;
 }
 
-.tutorialbutton span {
-  padding: 20px auto;
+.tutorialbutton_text {
   font-family: Effra Medium;
   font-size: 34px;
   color: #ffffff;

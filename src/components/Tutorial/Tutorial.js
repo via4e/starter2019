@@ -8,14 +8,7 @@ class Tutorial extends Component {
     render () {
         return (
             <div className='tutorial'>
-                   Component:tutorial
-                   <br />
-                   <span>{ this.props.page }</span>
-                   <br />
-                   {tutortext.first}
-                   <br />
-                   <button onClick={() => dispatch({ type: 'TUTORIAL_NEXT' })}>(Next)</button>
-                <TutorialWindow/>
+                <TutorialWindow page={this.props.page} pagedata={tutortext}/>
             </div>
         )
     }
