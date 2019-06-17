@@ -4,4 +4,21 @@
   height: 895px;
   background: #ffffff;
   border-radius: 84px;
+  opacity:0.9;
+}
+
+.tutorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.tutorHeader span{
+  top: 7%;
+  color: #9B9B9B;
+  font-family: Effra;
+  font-size: 44px;
+  line-height: 53px;
+  letter-spacing: 1.35px;
 }

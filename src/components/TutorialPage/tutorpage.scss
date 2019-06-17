@@ -1,11 +1,28 @@
 .tutorpage {
   position: relative;
   width: 80%;
-  height: 70%;
-  top: 7%;
+  height: 40%;
+  margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
   background: #eeeeee;
+}
+
+.tutorpage ul{
+  list-style: none;
+}
+
+.tutorpage ul li{
+  font-family: Effra;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.15px;
+  text-align: center;
+}
+
+.tutorpage ul li:last-child{
+  font-family: Effra Bold;
 }
 
 .tutorialbutton_text {
@@ -13,3 +30,4 @@
   font-size: 34px;
   color: #ffffff;
 }
+
