@@ -1,19 +1,71 @@
-var path = require('path');
-var express = require('express');
-var api = require('./api');
-var bodyParser = require('body-parser');
-var port = 3001;
+'use strict'
 
-var app = express();
+const express=require('express');
+const app=express();
 
-app.use(bodyParser.json());
-app.use('/api', api)
+const db = {
+    "emp": [
+        {
+            "id": 1,
+            "first_name": "Sebastian",
+            "last_name": "Eschweiler",
+            "email": "sebastian@codingthesmartway.com"
+        },
+        {
+            "id": 2,
+            "first_name": "Steve",
+            "last_name": "Palmer",
+            "email": "steve@codingthesmartway.com"
+        },
+        {
+            "id": 3,
+            "first_name": "Ann",
+            "last_name": "Smith",
+            "email": "ann@codingthesmartway.com"
+        }
+    ]
+}
 
-app.listen(port, 'localhost', function (err) {
-    if (err) {
-        console.log(err);
-        return;
-    }
+const cors = (req, res, next) => {
 
-    console.log('Listening at http://localhost:' + port);
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, PATCH, POST, DELETE");
+    res.header("Access-Control-Allow-Headers", "Origin, Content-Type");
+
+    next();
+};
+
+app.use(cors);
+
+app.listen(3344, () => {
+    console.info(`Listening to c http://localhost:3344`);
 });
+
+// Index Page
+app.get('/',function (req,res){
+    res.json(db.emp[0]);
+});
+
+app.get('/first',function (req,res){
+    res.json(db.emp[1]);
+});
+
+app.get('/second',function (req,res){
+    res.json(db.emp[2]);
+});
+
+// Updater
+function update () {
+    console.log('update', Date.now() );
+}
+
+//Other Errors
+app.use(function (err, req, res, next) {
+    console.error(err.stack)
+    res.status(500).send('Something broke!')
+})
+
+//404
+app.use(function (req, res, next) {
+    res.status(404).send("Page not found")
+})

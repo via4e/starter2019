@@ -4,10 +4,11 @@
   "description": "core",
   "dependencies": {
     "body-parser": "^1.14.1",
+    "config": "^3.1.0",
     "core-js": "^0.9.6",
+    "express": "^4.13.3",
     "object-assign": "4.0.1",
-    "qs": "^5.2.0",
-    "express": "^4.13.3"
+    "qs": "^5.2.0"
   },
   "scripts": {
     "start": "supervisor server.js"

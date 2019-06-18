@@ -15,12 +15,3 @@ export function tutorialReducer(state = initialState, action) {
     }
 }
 
-
-/*
-
-return { ...state,
-    tutorial: {
-        ...state.tutorial,
-        tutorial_page:  state.tutorial.tutorial_page + 1
-    }
-}*/
