@@ -17,7 +17,7 @@ class App extends Component {
 const mapStateToProps = store => {
     console.log('store', store)
     return {
-        page: store.init.tutorial_page,
+        page: store.tutorial.tutorial_page,
     }
 };
 

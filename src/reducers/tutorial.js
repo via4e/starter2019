@@ -1,18 +1,26 @@
 const initialState = {
-    page: 0,
+    tutorial_page: 0,
 }
 
 export function tutorialReducer(state = initialState, action) {
+    console.log('tutorial reducer', state.tutorial_page, action)
     switch (action.type){
         case 'TUTORIAL_NEXT':
             return { ...state,
-                      init: {
-                         ...state.init,
-                         tutorial_page:  state.init.tutorial_page + 1
-                      }
+                     tutorial_page:  state.tutorial_page + 1
             }
 
         default:
             return state
     }
 }
+
+
+/*
+
+return { ...state,
+    tutorial: {
+        ...state.tutorial,
+        tutorial_page:  state.tutorial.tutorial_page + 1
+    }
+}*/
