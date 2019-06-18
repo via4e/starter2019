@@ -19,12 +19,17 @@ class TutorialButton extends Component {
     }
 }
 
+const mapStateToProps = store => {
+    return {
+
+    }
+};
+
 const mapDispatchToProps = dispatch => ({
     nextPage: () => dispatch(TutorialNext)
 })
 
-
-
 export default connect(
+    mapStateToProps,
     mapDispatchToProps
 )(TutorialButton)
