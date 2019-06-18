@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Tutorial from './Tutorial/Tutorial.js'
-import TutorialNext from '../actions/TutorialNext'
 
 import './app.scss'
 
@@ -22,12 +21,6 @@ const mapStateToProps = store => {
     }
 };
 
-const mapDispatchToProps = dispatch => ({
-    nextPage: () => dispatch
-})
-
-
 export default connect(
     mapStateToProps,
-
 )(App)
