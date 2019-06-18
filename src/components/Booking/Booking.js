@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './booking.scss'
 import {connect} from 'react-redux'
+import BookingPage from "../BookingPage/BookingPage";
 
 
 class Booking extends Component {
@@ -13,6 +14,7 @@ class Booking extends Component {
                 <div className='bookingheader'>
                     { this.props.booking }
                 </div>
+                <BookingPage/>
                 <span>page: { page }</span>
             </div>
 
