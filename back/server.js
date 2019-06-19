@@ -42,15 +42,15 @@ app.listen(3344, () => {
 });
 
 // Index Page
-app.get('/',function (req,res){
+app.get('/api/user/view/1',function (req,res){
     res.json(db.emp[0]);
 });
 
-app.get('/first',function (req,res){
+app.get('/api/user/view/2',function (req,res){
     res.json(db.emp[1]);
 });
 
-app.get('/second',function (req,res){
+app.get('/api/user/view/3',function (req,res){
     res.json(db.emp[2]);
 });
 
