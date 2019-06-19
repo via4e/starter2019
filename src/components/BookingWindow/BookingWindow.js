@@ -10,6 +10,9 @@ class BookingWindow extends Component {
         return (
             <div>
                 <div className='bookingwindow'>
+                    <div className="bookingHeader">
+                        <span>КАТЕГОРИИ НОМЕРОВ</span>
+                    </div>
                     <BookingPage/>
                 </div>
             </div>
