@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import TutorialPage from "../TutorialPage/TutorialPage";
 import TutorialButton from "../TutorialButton/TutorialButton";
 import TutorialPictogram from "../TutorialPictogram/TutorialPictogram";
-
 import './tutorwindow.scss'
 
 class TutorialWindow extends Component {
