@@ -18,7 +18,7 @@ http://localhost:3344/api/user/view/3
 
 todo
 
-V json сервер доля эмуляции бэка
-V эмулировать json с отдачей сущностей
+json сервер доля эмуляции бэка
+эмулировать json с отдачей сущностей
 донастроить build, чтобы не падал html-webpack-plugin
 
